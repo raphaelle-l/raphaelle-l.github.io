@@ -1,7 +1,19 @@
- <div class="image-stack">
-    <div class="image-stack__item image-stack__item--top">
-      <img src="cuboulder.webp" alt="">
-    </div>
-    <div class="image-stack__item image-stack__item--bottom">
-      <img src="boulderlogo.jpg" alt="">
-    </div>
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image2 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+<div class="parent">
+  <img class="image1" src="cuboulder.webp" />
+  <img class="image2" src="boulderlogo.jpg0" />
+</div>
