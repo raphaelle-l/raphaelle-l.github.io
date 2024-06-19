@@ -1,95 +1,47 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Layout Task</title>
-    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-
-<body>
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-  <div class="logo">
-    My exciting website!
-  </div>
-
-  <nav>
-    <ul>
-      <li>
-        <a href="">Home</a>
-      </li>
-      <li>
-        <a href="">Blog</a>
-      </li>
-      <li>
-        <a href="">About us</a>
-      </li>
-      <li>
-        <a href="">Our history</a>
-      </li>
-      <li>
-        <a href="">Contacts</a>
-      </li>
-    </ul>
-  </nav>
-
-  <main class="grid">
-    <article>
-      <h1>
-        An Exciting Blog Post
-      </h1>
-      <img src="balloon-sq6.jpg" alt="placeholder" class="feature">
-      <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon
-        azuki bean garlic.</p>
-
-      <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens
-        dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-
-      <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon
-        napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko.
-        Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram
-        corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress.
-        Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
-
-      <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie
-        turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki
-        bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
-
-      <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle
-        seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
-
-    </article>
-
-    <aside>
-      <h2>
-        Photography
-      </h2>
-      <ul class="photos">
-        <li>
-          <img src="balloon-sq1.jpg" alt="placeholder">
-        </li>
-        <li>
-          <img src="balloon-sq2.jpg" alt="placeholder">
-        </li>
-        <li>
-          <img src="balloon-sq3.jpg" alt="placeholder">
-        </li>
-        <li>
-          <img src="balloon-sq4.jpg" alt="placeholder">
-        </li>
-        <li>
-          <img src="balloon-sq5.jpg" alt="placeholder">
-        </li>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Our history</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
+    </nav>
+    <div class="flex-container">
+      <article>
+        <img src="balloon-sq1.jpg" alt="image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae turpis volutpat, bibendum felis sed, euismod urna. Nullam viverra nibh nec blandit auctor.</p>
+      </article>
+      <aside>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+      </aside>
+    </div>
+    <h2>Photographs</h2>
+    <div class="photo-grid">
+      <img src="balloon-sq2.jpg" alt="photo">
+      <img src="balloon-sq3.jpg" alt="photo">
+      <img src="balloon-sq4.jpg" alt="photo">
+      <img src="balloon-sq5.jpg" alt="photo">
+      <img src="balloon-sq6.jpg" alt="photo">
+    </div>
+    <p>The Flexbox Layout module provides a more efficient way to layout, align and distribute space among items in a container, even when their size is unknown or dynamic.</p>
 
-    </aside>
-  </main>
+    <p>The Grid Layout module is a two-dimensional layout system that allows you to create grid structures for complex layouts. It offers more control over columns and rows than the Flexbox module.</p>
 
-</body>
+    <p>The Multiple Column Layout specification allows content to be laid out in columns, similar to a newspaper. This can be useful for text-heavy content that needs to be more readable.</p>
 
+    <script>
+      window.addEventListener('scroll', function() {
+        var nav = document.querySelector('nav');
+        nav.classList.toggle('sticky', window.scrollY > 0);
+      });
+    </script>
+  </body>
 </html>
