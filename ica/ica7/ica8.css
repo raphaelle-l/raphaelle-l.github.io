@@ -5,13 +5,10 @@ body{
     width: 25vw;
     height: 20vh;
     background-color: indianred;
-#box1:hover {
-background-color: purple;
-}
 }
 
-a:hover {
-  color: purple;
+.box1:hover {
+  background-color: purple;
 }
 
 #box2{
