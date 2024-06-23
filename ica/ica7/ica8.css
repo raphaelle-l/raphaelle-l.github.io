@@ -6,7 +6,9 @@ body{
     height: 20vh;
     background-color: indianred;
 }
-
+#box1 a:hover{
+    background-color: purple;
+}
 
 #box2{
     width: 25vw;
