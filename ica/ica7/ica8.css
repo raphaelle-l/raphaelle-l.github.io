@@ -1,15 +1,10 @@
-
 body{
     background-color: khaki;
 }
-.box1{
+#box1{
     width: 25vw;
     height: 20vh;
     background-color: indianred;
-    
-.box1:hover {
-  background-color: purple;
-}
 }
 
 
@@ -21,5 +16,5 @@ body{
 }
 
 @keyframes box2move{
- animation-name: bounce;
+
 }
