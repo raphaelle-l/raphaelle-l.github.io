@@ -4,12 +4,9 @@ body{
 #box1{
     width: 25vw;
     height: 20vh;
-    background-color: purple;
+    background-color: indianred;
 }
 
-#box1:hover {
-  background-color: purple;
-}
 
 #box2{
     width: 25vw;
