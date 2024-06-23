@@ -7,6 +7,9 @@ body{
     background-color: indianred;
 }
 
+#box1:hover {
+  background-color: purple;
+}
 
 #box2{
     width: 25vw;
