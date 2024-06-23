@@ -4,7 +4,7 @@ body{
 #box1{
     width: 25vw;
     height: 20vh;
-    background-color: purple;
+    background-color: indianred;
 }
 #box1:hover {
     background-color: purple;
@@ -18,5 +18,8 @@ body{
 }
 
 @keyframes box2move{
-
+animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
