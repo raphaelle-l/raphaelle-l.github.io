@@ -10,13 +10,13 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     height:20px;
-    background-color: blueviolet;
+    background-color: pink;
 }
 nav a{
     width:10vw;
     text-align: center;
     text-decoration: none;
-    color:black;
+    color:red;
 }
 
 
@@ -26,7 +26,7 @@ img{
 }
 
 #red-ball{
-    background-color: crimson;
+    background-color: pink;
     width: 20px;
     height:20px;
     border-radius: 50%;
