@@ -1,5 +1,12 @@
-<p style="font-size: 16px; "font-family:verdana">Enter Custom Name:</p>
-<input type="text" value="" size="40" > <br>
-<input type="radio" name="group1" value="audi">US<br />
-<input type="radio" name="group1" value="bmw">UK<br />
-<button>Generate Random Story</button>
+ <div>
+      <label for="customname">Enter custom name:</label>
+      <input id="customname" type="text" placeholder="">
+    </div>
+    <div>
+      <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
+      <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
+    </div>
+    <div>
+      <button class="randomize">Generate random story</button>
+    </div>
+    <p class="story"></p>
