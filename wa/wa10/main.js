@@ -2,10 +2,8 @@ var customName = document.getElementById('customname');
 var  randomize = document.querySelector('.randomize');
 var story = document.querySelector('.story');
 
-var storyText = 'It was 94 farenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
-var insertX = ['Willy the Goblin','Big Daddy','Father Christmas'];
-var insertY = ['the soup kitchen','Disneyland','the White House'];
-var insertZ = ['spontaneously combusted','melted into a puddle on the sidewalk','turned into a slug and crawled away'];
+var storyText = 'Once upon a time, a penguin named :insertx: decided to become a world-renowned ballet dancer. Wearing a tutu and a pair of sparkly slippers, he twirled and leapt across the icy landscape, much to the amusement of a group of seals who gave him a standing ovation with their flippers.';
+var insertX = ['Chip','Ralphie'];
 
 function randomValFrmArr(array) {
 	// console.log('Function Called');
@@ -18,13 +16,9 @@ function result() {
 
 	var newStory = storyText;
 	var itemX = randomValFrmArr(insertX);
-	var itemY = randomValFrmArr(insertY);
-	var itemZ = randomValFrmArr(insertZ);
 
 	newStory = newStory.replace(':insertx:',itemX);
 	newStory = newStory.replace(':insertx:',itemX);
-	newStory = newStory.replace(':inserty:',itemY);
-	newStory = newStory.replace(':insertz:',itemZ);
 	// console.log(newStory);
 
   if(customName.value != '') {
