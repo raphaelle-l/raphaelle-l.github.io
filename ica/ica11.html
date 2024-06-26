@@ -32,18 +32,18 @@
         top: 0;
         right: 0;
         font-size: 1.1rem;
-        color: #aaa;
+        color: pink;
       }
 
     </style>
   </head>
   <body>
-    <button>Display message box</button>
+    <button>Click me!</button>
 
     <script>
 
       const btn = document.querySelector('button');
-      btn.addEventListener('click', () => displayMessage('Brian: Hi there, how are you today?', 'chat'));
+      btn.addEventListener('click', () => displayMessage('This is my message!', 'chat'));
 
       function displayMessage(msgText,msgType) {
         const html = document.querySelector('html');
@@ -69,7 +69,7 @@
           panel.style.backgroundColor = 'pink';
         } else if(msgType === 'chat') {
           msg.style.backgroundImage = 'url(icons/chat.png)';
-          panel.style.backgroundColor = 'beige';
+          panel.style.backgroundColor = 'pink';
         } else {
           msg.style.paddingLeft = '20px';
         }
