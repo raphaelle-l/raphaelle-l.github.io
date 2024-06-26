@@ -2,7 +2,7 @@ var customName = document.getElementById('customname');
 var  randomize = document.querySelector('.randomize');
 var story = document.querySelector('.story');
 
-var storyText = 'Bob and :insertx: decided to build a rocket out of soda cans and rubber bands. They aimed for the moon, but ended up in :inserty:, where :insertz:.';
+var storyText = 'It was 94 farenheit outside, so Bob and :insertx: decided to build a rocket out of soda cans and rubber bands. They aimed for the moon, but ended up in :inserty:, where :insertz:.';
 var insertX = ['Ralphie','Chip'];
 var insertY = ['Farrand Field','CU Stadium'];
 var insertZ = ['they got caught by a teacher','they got the rocket stuck in a tree','they lost the rocket to a pack of squirrels'];
