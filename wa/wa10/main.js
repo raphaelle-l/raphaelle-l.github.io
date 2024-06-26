@@ -2,10 +2,10 @@ var customName = document.getElementById('customname');
 var  randomize = document.querySelector('.randomize');
 var story = document.querySelector('.story');
 
-var storyText = 'Bob and :insertx: decided to build a rocket out of soda cans and rubber bands. They aimed for the moon, but ended up in :inserty:, startling her cat and earning a :insertz:.';
+var storyText = 'Bob and :insertx: decided to build a rocket out of soda cans and rubber bands. They aimed for the moon, but ended up in :inserty:, where :insertz:.';
 var insertX = ['Ralphie','Chip'];
 var insertY = ['Farrand Field','CU Stadium'];
-var insertZ = ['spontaneously combusted','melted into a puddle on the sidewalk','turned into a slug and crawled away'];
+var insertZ = ['they got caught by a teacher','they got the rocket stuck in a tree','they lost the rocket to a pack of squirrels'];
 
 function randomValFrmArr(array) {
 	// console.log('Function Called');
