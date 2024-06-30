@@ -18,7 +18,7 @@ async function getQuote(){
     contentEL.innerText = data.content;
     quoteauthorEl.innerText = "~ " + data.author;
 
-    btnEl.innerText = "get a quote";
+    btnEl.innerText = "Abraham Lincoln";
     btnEl.disabled=false;
     
   } catch (error) {
@@ -29,12 +29,5 @@ async function getQuote(){
     btnEl.disabled=false;
   }
    
-  } catch (error) {
-    contentEL.innerText = "You can’t make a life-altering decision for someone else and expect it to stick.";
-    quoteauthorEl.innerText = "Jennifer Hudson";
-
-    btnEl.innerText = "get a quote";
-    btnEl.disabled=false;
-  }
 }
 btnEl.addEventListener("click", getQuote);
