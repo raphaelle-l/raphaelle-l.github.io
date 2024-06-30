@@ -14,11 +14,11 @@ async function getQuote() {
 }
 
 function displayQuote(quote) {
-  const quoteText = document.querySelector('#js-quote-text');
+  const quoteText = document.querySelector('js-quote-text');
   quoteText.textContent = quote;
 }
 
-const newQuoteButton = document.querySelector('#js-new-quote');
+const newQuoteButton = document.querySelector('js-new-quote');
 newQuoteButton.addEventListener("click", getQuote);
 
 const endpoint = "https://trivia.cyberwisp.com/getrandomchristmasquestion";
