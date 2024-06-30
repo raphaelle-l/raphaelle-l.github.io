@@ -19,7 +19,7 @@ function displayQuote(quote) {
 }
 
 const newQuoteButton = document.querySelector('#js-new-quote');
-newQuoteButton.addEventListener('click', getQuote);
+newQuoteButton.addEventListener("click", getQuote);
 
 const endpoint = "https://trivia.cyberwisp.com/getrandomchristmasquestion";
 
