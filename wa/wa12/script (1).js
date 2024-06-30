@@ -25,7 +25,7 @@ async function getQuote(){
     contentEL.innerText = "A house divided against itself cannot stand.";
     quoteauthorEl.innerText = "Abraham Lincoln";
 
-    btnEl.innerText = "get a quote";
+    btnEl.innerText = "Abraham Lincoln";
     btnEl.disabled=false;
   }
    
