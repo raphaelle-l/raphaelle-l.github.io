@@ -1,8 +1,3 @@
-const newQuoteButton = document.querySelector('#js-new-quote');
-newQuoteButton.addEventListener('click', getQuote);
-
-const endpoint = "https://trivia.cyberwisp.com/getrandomchristmasquestion";
-
 async function getQuote() {
   try {
     const response = await fetch(endpoint)
@@ -22,3 +17,9 @@ function displayQuote(quote) {
   const quoteText = document.querySelector('#js-quote-text');
   quoteText.textContent = quote;
 }
+
+const newQuoteButton = document.querySelector('#js-new-quote');
+newQuoteButton.addEventListener('click', getQuote);
+
+const endpoint = "https://trivia.cyberwisp.com/getrandomchristmasquestion";
+
