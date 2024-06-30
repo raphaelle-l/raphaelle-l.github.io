@@ -18,7 +18,7 @@ async function getQuote(){
     contentEL.innerText = data.content;
     quoteauthorEl.innerText = "~ " + data.author;
 
-    btnEl.innerText = "Abraham Lincoln";
+    btnEl.innerText = "get quote";
     btnEl.disabled=false;
     
   } catch (error) {
