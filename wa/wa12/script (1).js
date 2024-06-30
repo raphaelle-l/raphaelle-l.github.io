@@ -1,7 +1,7 @@
 const btnEl = document.getElementById("btn");
 const contentEL = document.getElementById("quote");
 const quoteauthorEl = document.getElementById("author");
-const apiURL = "https://api.quotable.io/random";
+const apiURL = "https://api.api-ninjas.com/v1/quotes";
 
 async function getQuote(){
   try {
@@ -9,8 +9,8 @@ async function getQuote(){
     btnEl.innerText = "Loading";
     btnEl.disabled=true;
 
-    contentEL.innerText= "updatng..";
-    quoteauthorEl.innerText = "updating..."
+    contentEL.innerText= "loading..";
+    quoteauthorEl.innerText = "loading..."
     //fetching quotes from api
     const response = await fetch(apiURL);
     const data = await response.json();
