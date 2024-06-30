@@ -1,7 +1,7 @@
 const btnEl = document.getElementById("btn");
 const contentEL = document.getElementById("quote");
 const quoteauthorEl = document.getElementById("author");
-const apiURL = "https://api.api-ninjas.com/v1/quotes";
+const apiURL = "https://type.fit/api/quotes";
 
 async function getQuote(){
   try {
