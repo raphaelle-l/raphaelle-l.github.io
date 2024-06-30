@@ -22,8 +22,8 @@ async function getQuote(){
     btnEl.disabled=false;
     
   } catch (error) {
-    contentEL.innerText = "Sorry an error occured!!";
-    quoteauthorEl.innerText = "Try again";
+    contentEL.innerText = "A house divided against itself cannot stand.";
+    quoteauthorEl.innerText = "get a quote";
 
     btnEl.innerText = "get a quote";
     btnEl.disabled=false;
