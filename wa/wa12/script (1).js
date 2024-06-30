@@ -23,11 +23,18 @@ async function getQuote(){
     
   } catch (error) {
     contentEL.innerText = "A house divided against itself cannot stand.";
-    quoteauthorEl.innerText = "get a quote";
+    quoteauthorEl.innerText = "Abraham Lincoln";
 
     btnEl.innerText = "get a quote";
     btnEl.disabled=false;
   }
-  
+   
+  } catch (error) {
+    contentEL.innerText = "You can’t make a life-altering decision for someone else and expect it to stick.";
+    quoteauthorEl.innerText = "Jennifer Hudson";
+
+    btnEl.innerText = "get a quote";
+    btnEl.disabled=false;
+  }
 }
 btnEl.addEventListener("click", getQuote);
