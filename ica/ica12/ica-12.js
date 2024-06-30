@@ -1,17 +1,24 @@
-async function getQuote() {
+const apiURL = "https://trivia.cyberwisp.com/getrandomchristmasquestion";
+
+async function getQuote(){
   try {
-    const response = await fetch(endpoint)
-    if (!response.ok) {
-      throw Error(response.statusText)
-    }
-    const json = await response.json();
-    console.log(json);
-    displayQuote(json.message);
-  } catch (err) {
-    console.log(err);
-    alert('Failed to fetch new quote');
+    //fetching quotes from api
+    const response = await fetch(apiURL);
+    const data = await response.json();
+
+    contentEL.innerText = data.content;
+    quoteauthorEl.innerText = "~ " + data.author;
+
+    btnEl.innerText = "get quote";
+    btnEl.disabled=false;
+    
+  } catch (error) {
+    contentEL.innerText = "error";
+    quoteauthorEl.innerText = "error";
+
+    btnEl.innerText = "get quote";
+    btnEl.disabled=false;
   }
-}
 
 function displayQuote(quote) {
   const quoteText = document.querySelector('js-quote-text');
