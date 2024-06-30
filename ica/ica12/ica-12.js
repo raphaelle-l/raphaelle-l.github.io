@@ -2,6 +2,12 @@ const apiURL = "https://trivia.cyberwisp.com/getrandomchristmasquestion";
 
 async function getQuote(){
   try {
+    //before getting quotes from an api
+    btnEl.innerText = "Loading";
+    btnEl.disabled=true;
+
+    contentEL.innerText= "loading..";
+    quoteauthorEl.innerText = "loading..."
     //fetching quotes from api
     const response = await fetch(apiURL);
     const data = await response.json();
@@ -13,19 +19,12 @@ async function getQuote(){
     btnEl.disabled=false;
     
   } catch (error) {
-    contentEL.innerText = "error";
-    quoteauthorEl.innerText = "error";
+    contentEL.innerText = "A house divided against itself cannot stand.";
+    quoteauthorEl.innerText = "Abraham Lincoln";
 
     btnEl.innerText = "get quote";
     btnEl.disabled=false;
   }
-
-function displayQuote(quote) {
-  const quoteText = document.querySelector('js-quote-text');
-  quoteText.textContent = quote;
+   
 }
-
-const newQuoteButton = document.querySelector('js-new-quote');
 btnEl.addEventListener("click", getQuote);
-const endpoint = "https://trivia.cyberwisp.com/getrandomchristmasquestion";
-
