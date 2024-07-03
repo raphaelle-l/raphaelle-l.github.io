@@ -2,71 +2,34 @@
 <html>
 <body>
 
-<script>
-  "employees" [
-    {
-      "employeeID": 1,
-      "name": "John Smith",
-      "salary": 50000,
-      "department": "Accounting"
-    },
-    {
-      "employeeID": 2,
-      "name": "Jane Doe",
-      "salary": 60000,
-      "department": "Human Resources"
-    },
-    {
-      "employeeID": 3,
-      "name": "Mike Johnson",
-      "salary": 40000,
-      "department": "IT"
-    },
-    {
-      "employeeID": 4,
-      "name": "Mary Williams",
-      "salary": 45000,
-      "department": "Marketing"
-    },
-    {
-      "employeeID": 5,
-      "name": "Steve Brown",
-      "salary": 55000,
-      "department": "Sales"
-    },
-    {
-      "employeeID": 6,
-      "name": "Barbara Jones",
-      "salary": 75000,
-      "department": "Accounting"
-    },
-    {
-      "employeeID": 7,
-      "name": "Susan Adams",
-      "salary": 80000,
-      "department": "Human Resources"
-    },
-    {
-      "employeeID": 8,
-      "name": "Bill Wilson",
-      "salary": 65000,
-      "department": "IT"
-    },
-    {
-      "employeeID": 9,
-      "name": "Karen Spencer",
-      "salary": 95000,
-      "department": "Marketing"
-    },
-    {
-      "employeeID": 10,
-      "name": "Mike Parker",
-      "salary": 100000,
-      "department": "Sales"
+function employeeRaises(peopleObj) {
+    
+  let new_emp = [];
+  let obj, newSalary;
+  for(let i=0; i<employees.length; i++){
+    if(employees[i].salary < 50000){
+      newSalary = peopleObj[i].salary +(peopleObj[i].salary * 10/100);
+      obj = {name: peopleObj[i].name, salary: newSalary};
+    new_emp.push(obj);
     }
-  ]
+  }
+  return new_emp;
+  
 }
-</script>
+
+employees = [
+{ name: "Alice", salary: 80000 },
+{ name: "Bob", salary: 40000 },
+{ name: "Carol", salary: 60000 },
+{ name: "Dan", salary: 70000 },
+{ name: "Ellen", salary: 100000 },
+];
+
+console.log(employeeRaises(employees));
+  
+  }
+
+}
 
 </body>
 </html>
