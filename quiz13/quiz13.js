@@ -1,31 +1,3 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8"/>
-    <title>JSON: Task 1</title>
-    <style>
-      p {
-        color: purple;
-        margin: 0.5em 0;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-    </style>
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
-
-  <body>
-
-    <section class="preview">
-
-
-
-    </section>
-
-  </body>
-  <script>
     const section = document.querySelector('section');
 
     let para1 = document.createElement('p');
@@ -35,13 +7,14 @@
     const requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/tasks/json/sample.json';
 
     fetch(requestURL)
-    .then(response => response.text())
-    .then(text => displayCatInfo(text))
+      .then(response => response.text())
+      .then(text => displayCatInfo(text))
 
     function displayCatInfo(catString) {
       let total = 0;
       let male = 0;
 
+      // Add your code here
 const catInfo = JSON.parse(catString);
 let totalKittens = 0;
 let maleKittens = 0;
@@ -75,6 +48,3 @@ kittenInfo = `There are ${totalKittens} kittens, ${maleKittens} male, and ${fema
 
     section.appendChild(para1);
     section.appendChild(para2);
-  </script>
-
-</html>
