@@ -1,78 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-     <head>
-          <meta charset="utf-8" />
-          <title>JSON: Task 1</title>
-          <style>
-               p {
-                    color: purple;
-                    margin: 0.5em 0;
-               }
+    const section = document.querySelector('section');
 
-               * {
-                    box-sizing: border-box;
-               }
-          </style>
-          <link rel="stylesheet" href="../styles.css" />
-     </head>
+    let para1 = document.createElement('p');
+    let para2 = document.createElement('p');
+    let motherInfo = 'The mother cats are called ';
+    let kittenInfo;
+    const requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/tasks/json/sample.json';
 
-     <body>
-          <section class="preview"></section>
-     </body>
-     <script>
-          let motherInfo = "The mother cats are called ";
-          let kittenInfo = "Their kittens are called ";
+    fetch(requestURL)
+      .then(response => response.text())
+      .then(text => displayCatInfo(text))
 
-          fetch("mothercatSample.json")
-               .then((response) => response.text())
-               .then((text) => displayCatInfo(text));
+    function displayCatInfo(catString) {
+      let total = 0;
+      let male = 0;
 
-          function displayCatInfo(catString) {
-               let total = 0;
-               let male = 0;
+      // Add your code here
+const catInfo = JSON.parse(catString);
+let totalKittens = 0;
+let maleKittens = 0;
+let femaleKittens = 0;
+let i = 0;
 
-               // Add your code here
-               let cats = JSON.parse(catString);
+for (const cat of catInfo) {
+  if (i === catInfo.length-1) {
+    motherInfo = `${motherInfo}and ${cat.name}.`;
+  } else {
+    motherInfo = `${motherInfo}${cat.name}, `;
+  }
+  i++
 
-               for (let i = 0; i < cats.length; i++) {
-                    if (i === cats.length - 1) {
-                         motherInfo += `and ${cats[i].name}.`;
-                    } else {
-                         motherInfo += `${cats[i].name}, `;
-                    }
+  totalKittens += cat.kittens.length;
+  for (const kitten of cat.kittens) {
+    if (kitten.gender === "m" ) {
+      maleKittens += 1
+    } else {
+      femaleKittens += 1;
+    }
+  }
+}
 
-                    let babies = cats[i].kittens;
-                    for (let j = 0; j < babies.length; j++) {
-                         total++;
-                         kittenInfo += `${babies[j].name}, `;
-                         if (babies[j].gender === "m") {
-                              male++;
-                         }
-                    }
-               }
-               kittenInfo =
-                    kittenInfo.substring(0, kittenInfo.length - 2) + ".";
-               insertAnd = kittenInfo.lastIndexOf(",");
-               kittenInfo =
-                    kittenInfo.substring(0, insertAnd) +
-                    " and" +
-                    kittenInfo.substring(insertAnd + 1, kittenInfo.length - 1) +
-                    ". ";
+kittenInfo = `There are ${totalKittens} kittens, ${maleKittens} male, and ${femaleKittens} female.`;
+      // Don't edit the code below here!
 
-               kittenInfo += `There are ${total} kittens, ${
-                    total - male
-               } females and ${male} males.`;
-               // Don't edit the code below here!
+      para1.textContent = motherInfo;
+      para2.textContent = kittenInfo;
+    }
 
-               para1.textContent = motherInfo;
-               para2.textContent = kittenInfo;
-          }
-
-          const section = document.querySelector("section");
-
-          let para1 = document.createElement("p");
-          let para2 = document.createElement("p");
-          section.appendChild(para1);
-          section.appendChild(para2);
-     </script>
-</html>
+    section.appendChild(para1);
+    section.appendChild(para2);
