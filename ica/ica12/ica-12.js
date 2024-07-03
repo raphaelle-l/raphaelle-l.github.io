@@ -1,7 +1,4 @@
-const btnEl = document.getElementById("btn");
-const contentEL = document.getElementById("quote");
-const quoteauthorEl = document.getElementById("author");
-const apiURL = "https://api.whatdoestrumpthink.com/api/";
+const apiURL = "https://trivia.cyberwisp.com/getrandomchristmasquestion";
 
 async function getQuote(){
   try {
