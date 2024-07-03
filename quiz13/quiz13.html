@@ -42,8 +42,31 @@
       let total = 0;
       let male = 0;
 
-      // Add your code here
+const catInfo = JSON.parse(catString);
+let totalKittens = 0;
+let maleKittens = 0;
+let femaleKittens = 0;
+let i = 0;
 
+for (const cat of catInfo) {
+  if (i === catInfo.length-1) {
+    motherInfo = `${motherInfo}and ${cat.name}.`;
+  } else {
+    motherInfo = `${motherInfo}${cat.name}, `;
+  }
+  i++
+
+  totalKittens += cat.kittens.length;
+  for (const kitten of cat.kittens) {
+    if (kitten.gender === "m" ) {
+      maleKittens += 1
+    } else {
+      femaleKittens += 1;
+    }
+  }
+}
+
+kittenInfo = `There are ${totalKittens} kittens, ${maleKittens} male, and ${femaleKittens} female.`;
       // Don't edit the code below here!
 
       para1.textContent = motherInfo;
