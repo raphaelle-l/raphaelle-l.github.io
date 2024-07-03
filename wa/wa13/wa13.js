@@ -1,5 +1,5 @@
 {
-  "employees": [
+  "employees" [
     {
       "employeeID": 1,
       "name": "John Smith",
