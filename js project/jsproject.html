@@ -63,10 +63,17 @@ slider.oninput = function() {
 }
 </script>
 
-  <button onclick="displayText()">Enter</button>
-
-<div id="textField" style="display: none;">
-  Thank you for entering your phone number!
-</div>
+<!DOCTYPE html>
+<html>
+ <body>
+  <button id="demo" onclick="myFunction()">Enter</button>
+  <script>
+   function myFunction() {
+    document.getElementById("demo").innerHTML = "thank you!";
+    }
+  </script>
+ </body>
+</html>  
+  
 </body>
 </html>
