@@ -5,7 +5,7 @@ body{
   justify-content: center;
   align-items: center;
   font-family: 'Courier New', Courier, monospace;
-  background: linear-gradient(to left bottom , lightgreen , lightblue);
+  background: linear-gradient(to left bottom , pink , lightblue);
 }
 
 .container{
@@ -26,9 +26,11 @@ body{
     appearance: none; /* removes browser-specific styling */
     width: 300px; /* width of slider */
     height: 25px; /* height of slider */
-    background: #FF5C35 ; /* orange background */
+    background: purple ; /* orange background */
     outline: none; /* remove outline */
     border-radius: 50px; /* round corners */
+    margin: 10px;
+
 }
 
 .slider::-webkit-slider-thumb {
