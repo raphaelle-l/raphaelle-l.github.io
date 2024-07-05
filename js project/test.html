@@ -11,9 +11,10 @@
 <body>
   <div class="container">
     <h1 class="heading">Please Indicate Phone Number Here:</h1>
-    <input class="slider" type="range" min="0" max="100" value="50"> 
-    <input type="range" min="1" max="9999999999" value="5555555555" class="slider" id="myRange">
-
+    <div class="slidecontainer">
+  <input type="range" min="1" max="9999999999" value="5555555555" class="slider" id="myRange">
+  <p style="font-family:verdana; font-size:30px">Phone Number: <span id="demo" style="color: purple"></span></p>
+</div>
     <button class="btn" id="btn">Enter</button>
   </div>
   <script src="script.js"></script>
