@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html>
-<body style="background-color: pink ;">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jsproject.css">
 <style>
-
-.slidecontainer {
-  width: 100%;
-}
 
 .slider {
   -webkit-appearance: none;
@@ -31,7 +26,7 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: red;
+  background: purple;
   cursor: pointer;
 }
 
@@ -39,7 +34,7 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: red;
+  background: purple;
   cursor: pointer;
 }
 </style>
@@ -50,7 +45,7 @@
 
 <div class="slidecontainer">
   <input type="range" min="1" max="9999999999" value="5555555555" class="slider" id="myRange">
-  <p style="font-family:verdana; font-size:30px">Phone Number: <span id="demo"></span></p>
+  <p style="font-family:verdana; font-size:30px">Phone Number: <span id="demo" style="color: purple"></span></p>
 </div>
 
 <script>
@@ -62,6 +57,27 @@ slider.oninput = function() {
   output.innerHTML = this.value;
 }
 </script>
+
+</style>
+</head>
+<body>
+
+</body>
+</html>
+</html>  
+   <html>
+<body>
+
+<p id="enter" onclick="myFunction()"; style="font-family:verdana; font-size:30px" >Enter</p>
+
+<script>
+function myFunction() {
+  document.getElementById("enter").innerHTML = "Thank you!";
+}
+</script>
+
+</body>
+</html>
 
 </body>
 </html>

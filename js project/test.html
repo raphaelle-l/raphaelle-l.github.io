@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Number Thing</title>
+  <script src="https://kit.fontawesome.com/28c6bf77a9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">Please Indicate Phone Number Here:</h1>
+    <div class="slidecontainer">
+  <input type="range" min="1" max="9999999999" value="5555555555" class="slider" id="myRange">
+  <p >Phone Number: <span id="demo" style="color: purple"></span></p>
+</div>
+    <script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+<p id="enter" onclick="myFunction()" style="font-size: 20px" >Enter</p>
+<script>
+function myFunction() {
+  document.getElementById("enter").innerHTML = "Thank you!";
+}
+</script>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

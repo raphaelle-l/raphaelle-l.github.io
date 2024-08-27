@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+function employeeRaises(peopleObj) {
+    
+  let new_emp = [];
+  let obj, newSalary;
+  for(let i=0; i<employees.length; i++){
+    if(employees[i].salary < 50000){
+      newSalary = peopleObj[i].salary +(peopleObj[i].salary * 10/100);
+      obj = {name: peopleObj[i].name, salary: newSalary};
+    new_emp.push(obj);
+    }
+  }
+  return new_emp;
+  
+}
+
+employees = [
+{ name: "Alice", salary: 80000 },
+{ name: "Bob", salary: 40000 },
+{ name: "Carol", salary: 60000 },
+{ name: "Dan", salary: 70000 },
+{ name: "Ellen", salary: 100000 },
+];
+
+console.log(employeeRaises(employees));
+  
+  }
+
+}
+
+</body>
+</html>

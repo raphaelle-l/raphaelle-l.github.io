@@ -1,17 +1,3 @@
-.slider {
-    appearance: none; /* removes browser-specific styling */
-    width: 300px; /* width of slider */
-    height: 25px; /* height of slider */
-    background: pink ; /* orange background */
-    outline: none; /* remove outline */
-    border-radius: 50px; /* round corners */
-}
-
-.slider::-webkit-slider-thumb {
-  appearance: none; /* removes browser-specific styling */
-  width: 20px; /* handle width */
-  height: 20px; /* handle height */
-  border-radius: 50%; /* make it circular */
-  background: #FFFFFF; /* white color */
-  cursor: pointer; /* cursor on hover */
+body{
+  background: linear-gradient(to left bottom , pink , lightblue);
 }
