@@ -6,4 +6,4 @@ Welcome to my page! :)
 
 My name is Raphaelle and I'm a third year CTD major.
 
-![alt text]([http://url/to/img.png](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrTFrhr_-pYR74jUgOy7IerAoHAX3zPIZZcg&s))
+![file-6113d5f8845dc](https://github.com/user-attachments/assets/4f8c7783-76e1-46b0-8c40-b1bfd0314062)
