@@ -1,0 +1,30 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  table {
+    align: center;
+  }
+
+  h1 {
+    color: black;
+    text-align: center;
+    font-family: Georgia, serif;
+  }
+  h2 {
+    color: black;
+    font-family: Georgia, serif;
+  }
+  h3 {
+    color: black;
+    font-family: Georgia, serif;
+  }
+  h4 {
+    color: black;
+  }
+  p {
+  }
