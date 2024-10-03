@@ -1,0 +1,17 @@
+body {
+    background: url(overlay\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px 800px;
+  }
+  .overlay1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 800px;
+  }
+  
+  .overlay2 {
+    bottom: 0;
+    left: 0;
+    width: 100px;
+  }
