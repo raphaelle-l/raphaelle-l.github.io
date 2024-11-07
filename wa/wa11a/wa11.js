@@ -8,25 +8,25 @@ const overlay = document.querySelector('.overlay');
 const images = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.png'];
 
 /* Declaring the alternative text for each image file */
-const alts = {'pic1.jpg' : 'Goofy Guy 1','pic2.jpg' : 'Goofy Guy 2','pic3.jpg' : 'Goofy Guy 3','pic4.jpg' : 'Goofy Guy 4','pic5.png' : 'Goofy Guy 5'}
+const alt = {'pic1.jpg' : 'Goofy Guy 1','pic2.jpg' : 'Goofy Guy 2','pic3.jpg' : 'Goofy Guy 3','pic4.jpg' : 'Goofy Guy 4','pic5.png' : 'Goofy Guy 5'}
 
 /* Looping through images */
 for(let i=0; i<images.length; i++){
     const newImage = document.createElement('img');
-    newImage.setAttribute('src', images[i]);
-    newImage.setAttribute('alt', images[i]);
+    newImage.setAttribute('src', "images/"+ images[i]);
+    newImage.setAttribute('alt', "images/"+ images[i]);
     thumbBar.appendChild(newImage);
+    thumbBar.addEventListener('click', (e) => {
+        displayedImage.src = e.target.src;
+        displayedImage.alt = e.target.alt;
+
+    }); // Close event listener
 }
 
-thumbnailLoop();
 
 /* Making the clicked thumbnail the large image */
 
-thumbBar.addEventListener('click', (e) => {
-  if(e.target && e.target.nodeName == "img") {
-    displayedImage.src = e.target.src;
-}
-}); // Close event listener
+
 
   
 /* Wiring up the Darken/Lighten button */
