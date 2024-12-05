@@ -1,0 +1,41 @@
+{
+	"projects": [{
+		"name": "Tiki the Conservation Plant",
+		"subdomain": "tiki",
+		"category": ["object"],
+		"subtitle": "GEEN 1400 Project",
+		"collaborators": ["Raphaëlle Lepère, Claire Sweeney, Bryan Ordoñez, Samir Dehrar, Adam Brookes"],
+		"abstract": "Raphaëlle Lepère, Claire Sweeney, Bryan Ordoñez, Samir Dehrar,  and Adam Brookes",
+		"video": ["False"],
+		"published": ["True","1"],
+		"citations": [["Raphaelle Lepere"]]	
+	},{
+		"name": "Vacation in Time",
+		"subdomain": "vacation",
+		"category": ["sound"],
+		"subtitle": "Sound Project",
+		"abstract": "Raphaëlle Lepère",
+		"collaborators": ["Raphaelle Lepere"],
+		"mainimg": "tapart.jpg",
+		"video": ["False"],
+		"images": ["tapart.jpg"],
+		"published": ["True","1"],
+		"citations": [["Raphaelle Lepere"]]
+	},{
+		"name": "99 Luftballons Photobook",
+		"subdomain": "photobook",
+		"category": ["photo"],
+		"subtitle": "Image Project",
+		"abstract": "Raphaëlle Lepère",
+		"collaborators": ["Raphaelle Lepere"],
+		"mainimg": "tapart.jpg",
+		"video": ["False"],
+		"images": ["tapart.jpg"],
+		"published": ["True","1"],
+		"citations": [["Raphaelle Lepere"]]
+		}
+		]
+
+
+
+	}
