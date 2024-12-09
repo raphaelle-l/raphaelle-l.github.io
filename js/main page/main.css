@@ -58,6 +58,14 @@ body {
     }
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;    
+    height: auto;
+}
+
 /* Main Hero Section Styles */
 .hero {
     background-image: url('');
@@ -93,16 +101,11 @@ body {
 }
 
 .about .about-text {
-    width: 450px;
+    width: auto;
     color: #040303;
-    padding: 5rem 1rem 5rem 5rem;
+    padding: 5rem 5rem 5rem 5rem;
 }
 
-.about .about-image img {
-    height: 400px;
-    width: 450px;
-    padding: 5rem 5rem 5rem 1rem;
-}
 
 /* Portfolio section styles */
 .portfolio {

@@ -1,0 +1,95 @@
+{
+	"projects": [{
+		"name": "Made in USA",
+		"subdomain": "made_in_usa",
+		"category": ["acrylic", "plastic", "painting"],
+		"subtitle": "16x20",
+		"collaborators": ["Raphaelle Lepere"],
+		"abstract": "Acrylic on Canvas",
+		"mainimg": "tulips.jpg",
+		"video": ["False"],
+		"images": ["tulips.jpg"],
+		"published": ["True","1"],
+		"citations": [["Raphaelle Lepere"]]	
+	},{
+		"name": "Burning Seconds",
+		"subdomain": "burning_seconds",
+		"category": ["acrylic", "wood burn", "painting"],
+		"subtitle": "20x16",
+		"abstract": "Acrylic on Canvas",
+		"collaborators": ["Raphaelle Lepere"],
+		"mainimg": "tapart.jpg",
+		"video": ["False"],
+		"images": ["tapart.jpg"],
+		"published": ["True","1"],
+		"citations": [["Raphaelle Lepere"]]
+	},{
+		"name": "Grandma's Garden",
+		"subdomain": "grandmas_garden",
+		"category": ["acrylic", "painting"],
+		"subtitle": "10x8",
+		"abstract": "Acrylic on Canvas",
+		"collaborators": ["Raphaelle Lepere"],
+		"mainimg": "tapart.jpg",
+		"video": ["False"],
+		"images": ["tapart.jpg"],
+		"published": ["True","1"],
+		"citations": [["Raphaelle Lepere"]]
+		},{
+			"name": "Silent Tulips",
+			"subdomain": "silent_tulips",
+			"category": ["acrylic", "painting"],
+			"subtitle": "8x10",
+			"abstract": "Acrylic on Canvas",
+			"collaborators": ["Raphaelle Lepere"],
+			"video": ["False"],
+			"published": ["True","1"],
+			"citations": [["Raphaelle Lepere"]]
+			},
+
+			{
+				"name": "Strawberries",
+				"subdomain": "strawberries",
+				"category": ["acrylic", "painting"],
+				"subtitle": "8x10",
+				"abstract": "Acrylic on Canvas",
+				"collaborators": ["Raphaelle Lepere"],
+				"mainimg": "tapart.jpg",
+				"video": ["False"],
+				"images": ["tapart.jpg"],
+				"published": ["True","1"],
+				"citations": [["Raphaelle Lepere"]]
+			},
+
+			{
+				"name": "Colorful Abstract",
+				"subdomain": "colorful_abstract",
+				"category": ["acrylic", "painting"],
+				"subtitle": "12x16",
+				"abstract": "Acrylic on Canvas",
+				"collaborators": ["Raphaelle Lepere"],
+				"mainimg": "tapart.jpg",
+				"video": ["False"],
+				"images": ["tapart.jpg"],
+				"published": ["True","1"],
+				"citations": [["Raphaelle Lepere"]]
+			},
+
+			{
+				"name": "Oscar",
+				"subdomain": "oscar",
+				"category": ["acrylic", "painting"],
+				"subtitle": "8x10",
+				"abstract": "Acrylic on Canvas",
+				"collaborators": ["Raphaelle Lepere"],
+				"mainimg": "tapart.jpg",
+				"video": ["False"],
+				"images": ["tapart.jpg"],
+				"published": ["True","1"],
+				"citations": [["Raphaelle Lepere"]]
+			}
+		]
+
+
+
+	}

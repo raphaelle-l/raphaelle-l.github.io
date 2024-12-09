@@ -1,5 +1,5 @@
 let proj;
-fetch('art.json')
+fetch('patisserie.json')
     .then(response =>{
         return response.json();
     }).then(projects => {
