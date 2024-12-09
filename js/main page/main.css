@@ -76,16 +76,16 @@ img {
     display: flex;
     align-items: center;
     justify-content: start;
-    margin: 4.8rem 0;
+    margin: 4.8vw 0;
 }
 
 .hero .intro {
     text-align: center;
-    margin: 0 5rem;
+    margin: 0 5vw;
 }
 
 .hero .intro-buttons {
-    margin: 2rem 0;
+    margin: 2vw 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -103,14 +103,14 @@ img {
 .about .about-text {
     width: auto;
     color: #040303;
-    padding: 5rem 5rem 5rem 5rem;
+    padding: 5vw 5vw 5vw 5vw;
 }
 
 
 /* Portfolio section styles */
 .portfolio {
-    margin: 4.8rem 0;
-    padding: 0 5rem;
+    margin: 4.8vw 0;
+    padding: 0 5vw;
 }
 
 .port-card {
@@ -126,15 +126,15 @@ img {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 4.8rem 0;
-    padding: 0 5rem;
+    margin: 4.8vw 0;
+    padding: 0 5vw;
 }
 
 .my-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 2rem 0;
+    margin: 2vw 0;
 }
 
 .my-row .my-col {
@@ -149,7 +149,7 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    padding: 1rem;
+    padding: 1vw;
     color: #3a4e48;
 }
 
