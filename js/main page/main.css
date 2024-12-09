@@ -351,7 +351,7 @@ a:link {
     color: #040303;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 420px) {
 /* Styles defined for the desktop or the bigger screen devices*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
