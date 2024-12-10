@@ -79,6 +79,16 @@ h2 {
 }
 
 
+
+  div.centerplayer{
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+.centerplayer {
+    margin-left: auto;
+    margin-right: auto;
+}
 a:link {
     color: #beb0a7;
     background-color: transparent;
@@ -92,17 +102,29 @@ a:link {
   }
   
   a:hover {
-    color: #8b9d83;
+    color: #f49097;
     background-color: transparent;
     text-decoration: none;
   }
 
-  div.centerplayer{
-    margin-right: auto;
-    margin-left: auto;
-    }
+  
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: #8b9d83;
+  }
+  
+  .next {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
 
-.centerplayer {
-    margin-left: auto;
-    margin-right: auto;
-}
+  .backbutton {
+    margin-top: 6%;
+    margin-left: 3%;
+    font-size: 40px;
+  }
