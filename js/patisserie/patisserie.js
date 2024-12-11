@@ -1,46 +1,28 @@
-let proj;
-fetch('patisserie.json')
-    .then(response =>{
-        return response.json();
-    }).then(projects => {
-        console.log(projects);
-        proj = projects;
-        parseData(projects);
-    }).catch(err =>{
-        console.log(`error ${err}`);
-    })
+let slideIndex = 1;
+showSlides(slideIndex);
 
-function parseData(data){
-    for(let i=0; i<data.projects.length; i++){
-    document.getElementById("projects").innerHTML += `<a href="${data.projects[i].subdomain}.html">
-    <div class="row project" id="${data.projects[i].subdomain}">
-        <div class="description"><h2>${data.projects[i].name}</h2><p class="subtitle">${data.projects[i].subtitle}</p>
-        <p>${data.projects[i].abstract}</p></div></div></a>`;
-    }
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-for(b of document.querySelectorAll("#buttons button")){
-    b.addEventListener("click", e=>{
-        console.log(e.target.value);
-        sortProjects(e.target.value);
-    })
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
 
-function sortProjects(button){
-    if(button == "clear"){
-        for(let i=0; i<proj.projects.length; i++){
-            document.getElementById(proj.projects[i].subdomain).style.display = "flex";
-        }
-    }else if(button != undefined){
-        for(let i=0; i<proj.projects.length;i++){
-            if(proj.projects[i].category.includes(button) == true){
-                document.getElementById(proj.projects[i].subdomain).style.display = "flex";
-            }else{
-                document.getElementById(proj.projects[i].subdomain).style.display = "none";
-            }
-        }
-    }else{
-        console.log("error, button value is undefined");
-    }
-
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
